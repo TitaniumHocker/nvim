@@ -13,5 +13,3 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf',                     " FZF wrapper with cool commands
             \ { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'aurieh/discord.nvim',              " Status for discord
-            \ { 'do': ':UpdateRemotePlugins'}
