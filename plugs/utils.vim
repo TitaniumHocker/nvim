@@ -1,9 +1,11 @@
 Plug 'neovim/nvim-lspconfig'             " Nvim LSP support config files
+Plug 'nvim-lua/completion-nvim'          " Completion with LSP
 Plug 'psf/black', { 'branch': 'stable' } " Black formatter for python files
 Plug 'mattn/emmet-vim'                   " Emmet
 Plug 'scrooloose/nerdtree',              " NERDTree
             \ { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'       " git integration for nerdtree
+Plug 'ryanoasis/vim-devicons'
 Plug 'majutsushi/tagbar'                 " Tags
 Plug 'airblade/vim-gitgutter'            " Git
 Plug 'wikitopian/hardmode'               " Hardmode, fuck arrows
@@ -13,3 +15,5 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf',                     " FZF wrapper with cool commands
             \ { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-fugitive'

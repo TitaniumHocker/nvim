@@ -1,4 +1,5 @@
 set number
+
 autocmd TermOpen * setlocal nonumber norelativenumber
 set expandtab
 set shiftwidth=4
@@ -55,10 +56,46 @@ colorscheme gruvbox
 " let g:airline_theme='rusticated'
 let g:airline_powerline_fonts = 1
 
-" Some search tuning
-
 " Mappings
 map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 map <C-b> :Black <CR>
 
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
+
+set guifont=FiraCode\ Nerd\ Font\ Mono:h16
+let g:neovide_transparency=0.95
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'M',
+                \ 'Staged'    :'S',
+                \ 'Untracked' :'U',
+                \ 'Renamed'   :'R',
+                \ 'Unmerged'  :'!=',
+                \ 'Deleted'   :'D',
+                \ 'Dirty'     :'#',
+                \ 'Ignored'   :'I',
+                \ 'Clean'     :'C',
+                \ 'Unknown'   :'?',
+                \ }
+
+let g:startify_lists = [
+        \ { 'type': 'files',     'header': ['   Recent']            },
+        \ { 'type': 'dir',       'header': ['   CWD '. getcwd()] },
+        \ { 'type': 'sessions',  'header': ['   Sessions']       },
+        \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+        \ { 'type': 'commands',  'header': ['   Commands']       },
+        \ ]
+
+let g:startify_bookmarks = [
+    \ { "fc": "~/.config/fish" },
+    \ { "nc": "~/.config/nvim" }
+    \ ]
+let NERDTreeShowHidden=1
