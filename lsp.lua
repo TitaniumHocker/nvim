@@ -13,8 +13,8 @@ lspconfig.pylsp.setup{
             pyflakes={enabled=false},
             yapf={enabled=false},
             pycodestyle={enabled=false},
-            pydocstyle={enabled=false},
             pylint={enabled=false},
+            pydocstyle={enabled=true},
             mccabe={enabled=true},
             flake8={enabled=true}
         }
