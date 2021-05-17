@@ -96,3 +96,6 @@ let NERDTreeShowHidden=1
 " let g:neovide_fullscreen=v:true
 let g:python_highlight_all = 1
 set colorcolumn=100
+let g:vim_isort_map = '<C-i>'
+let g:vim_isort_python_version = 'python3'
+nnoremap <C-b> :Black<CR>
