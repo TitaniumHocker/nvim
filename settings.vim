@@ -1,5 +1,4 @@
-set number
-
+set relativenumber
 autocmd TermOpen * setlocal nonumber norelativenumber
 set expandtab
 set shiftwidth=4
@@ -25,11 +24,6 @@ autocmd FileType
 let g:HardMode_level = 'wannabe'
 let g:HardMode_hardmodeMsg = 'Fuck arrows, punk!'
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
-" Pymode config
-" let g:python3_host_prog = '/usr/sbin/python'
-" let g:pymode_options_max_line_length = 100
-" let g:pymode_lint = 0 " Disable linters in Pymode, COC used
 
 " Some snippets configuration
 let g:UltiSnipsExpandTrigger="<C-s>"
@@ -99,3 +93,6 @@ let g:startify_bookmarks = [
     \ { "nc": "~/.config/nvim" }
     \ ]
 let NERDTreeShowHidden=1
+" let g:neovide_fullscreen=v:true
+let g:python_highlight_all = 1
+set colorcolumn=100
