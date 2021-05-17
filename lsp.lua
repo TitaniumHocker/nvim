@@ -6,10 +6,17 @@ lspconfig.perlls.setup{on_attach=require('completion').on_attach}
 lspconfig.html.setup{on_attach=require('completion').on_attach}
 lspconfig.tsserver.setup{on_attach=require('completion').on_attach}
 lspconfig.vuels.setup{on_attach=require('completion').on_attach}
-lspconfig.pyls.setup{
+lspconfig.pylsp.setup{
     on_attach=require('completion').on_attach,
-    root_dir=lspconfig.util.root_pattern('Pipfile') 
-        or lspconfig.util.root_pattern('pyproject.toml')
-        or lspconfig.util.root_pattern('setup.py')
-        or lspconfig.util.root_pattern('.git'),
+    settings={
+        plugins={
+            pyflakes={enabled=false},
+            yapf={enabled=false},
+            pycodestyle={enabled=false},
+            pydocstyle={enabled=false},
+            pylint={enabled=false},
+            mccabe={enabled=true},
+            flake8={enabled=true}
+        }
+    }
 }
