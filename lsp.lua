@@ -16,7 +16,9 @@ lspconfig.pylsp.setup{
             pydocstyle={enabled=false},
             pylint={enabled=false},
             mccabe={enabled=true},
-            flake8={enabled=true}
+            flake8={enabled=true, maxLineLength=100},
+            mypy={enabled=true},
+            isort={enabled=true}
         }
     }
 }
