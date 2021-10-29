@@ -1,5 +1,3 @@
-Plug 'neovim/nvim-lspconfig'             " Nvim LSP support config files
-Plug 'nvim-lua/completion-nvim'          " Completion with LSP
 Plug 'psf/black', { 'branch': 'stable' } " Black formatter for python files
 Plug 'fisadev/vim-isort'                 " Isort import in python files
 Plug 'mattn/emmet-vim'                   " Emmet

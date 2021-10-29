@@ -10,5 +10,6 @@ source $HOME/.config/nvim/plugs/syntax.vim
 source $HOME/.config/nvim/plugs/themes.vim
 source $HOME/.config/nvim/plugs/visual.vim
 source $HOME/.config/nvim/plugs/utils.vim
+source $HOME/.config/nvim/plugs/lsp.vim
 
 call plug#end()
