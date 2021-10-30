@@ -1,10 +1,12 @@
 " Line numbers setup
 set relativenumber
+set nu
 
 " Tabs configuration
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set smartindent
 
 " Tab = 2 space for some filetypes
 autocmd FileType
@@ -24,19 +26,21 @@ if has('mouse')
 endif
 
 " Perfomance tweaks
-" set updatetime=100
+set updatetime=50
 set lazyredraw
 set ttyfast
 
-" Autoconfigure window with terminal
-autocmd TermOpen * setlocal nonumber norelativenumber
-
-" Set filetype for template toolkit files
-augroup tt_ft
-  au!
-  autocmd BufNewFile,BufRead *.tt   setf tt2html
-augroup END
-
-" Enable spell check for text files
+" Spelling languages
 set spelllang=en_us,ru_ru
-autocmd FileType text,md,rst set spell
+
+" Keep unsaved buffers in the background
+set hidden
+
+" Force lines wrapping
+set wrap
+
+" Scrolling padding
+set scrolloff=8
+
+" Fuck this shit
+set noerrorbells

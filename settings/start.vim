@@ -10,5 +10,6 @@ let g:startify_lists = [
 " Bookmarks
 let g:startify_bookmarks = [
     \ { "fc": "~/.config/fish" },
-    \ { "nc": "~/.config/nvim" }
+    \ { "nc": "~/.config/nvim" },
+    \ { "zc": "~/.zshrc" }
     \ ]

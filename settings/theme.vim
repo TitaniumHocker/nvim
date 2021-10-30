@@ -2,10 +2,12 @@
 if has("termguicolors")
     set termguicolors
 endif
-syntax on
+syntax enable
 let g:python_highlight_all = 1
 set colorcolumn=100
 colorscheme gruvbox
+set background=dark
+let g:gruvbox_transparent_bg = 1
 " colorscheme rusticated
 " let g:airline_theme='rusticated'
 let g:airline_powerline_fonts = 1
